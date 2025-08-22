@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AM Fahrt</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f1115"/>
+</head>
+<body>
+  <h1>AM Fahrt</h1>
+  <p>Deine Routen-App mit YouTube & Spotify Einbindung.</p>
+
+  <script>
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker.register('service-worker.js')
+      .then(()=>console.log('Service Worker registriert'))
+      .catch(console.error);
+    }
+  </script>
+</body>
+</html>
